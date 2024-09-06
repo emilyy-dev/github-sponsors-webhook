@@ -2,11 +2,13 @@ package ar.emily.sponsors.model.action;
 
 import ar.emily.sponsors.model.Sponsor;
 import ar.emily.sponsors.model.Sponsorship;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 import discord4j.discordjson.json.EmbedAuthorData;
 import discord4j.discordjson.json.EmbedData;
 import discord4j.discordjson.json.EmbedFieldData;
 import discord4j.rest.util.Color;
 
+@JsonTypeName("tier_change")
 public record TierChange(Sponsorship sponsorship, PendingTierChange.Changes changes) implements Action {
 
   @Override
