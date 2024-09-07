@@ -37,7 +37,7 @@ public final class Main {
                 .then(server.onDispose())
         ).doOnError(Logger::error)
         .then(Mono.fromRunnable(() -> Logger.info("Shut down")))
-        .subscribe();
+        .block();
   }
 
   private Main() {

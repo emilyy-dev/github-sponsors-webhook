@@ -8,8 +8,8 @@ import discord4j.discordjson.json.EmbedData;
 import discord4j.discordjson.json.EmbedFieldData;
 import discord4j.rest.util.Color;
 
-@JsonTypeName("tier_change")
-public record TierChange(Sponsorship sponsorship, PendingTierChange.Changes changes) implements Action {
+@JsonTypeName("tier_changed")
+public record TierChanged(Sponsorship sponsorship, PendingTierChange.Changes changes) implements Action {
 
   @Override
   public EmbedData asDiscordEmbed() {

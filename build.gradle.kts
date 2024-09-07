@@ -9,7 +9,7 @@ java {
 }
 
 application {
-  mainClass.set("ar.emily.sponsors.Main")
+  mainClass = "ar.emily.sponsors.Main"
 }
 
 repositories {
